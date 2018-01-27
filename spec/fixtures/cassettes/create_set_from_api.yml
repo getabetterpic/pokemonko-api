@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pokemontcg.io/v1/sets?name=Sun%20%26%20Moon&page=1&pageSize=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Jan 2018 13:35:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de9c0e485106cc80be8cd7a0b1548e74e1517060148; expires=Sun, 27-Jan-19
+        13:35:48 GMT; path=/; domain=.pokemontcg.io; HttpOnly
+      Link:
+      - ''
+      Page-Size:
+      - '1'
+      Count:
+      - '1'
+      Total-Count:
+      - '1'
+      Etag:
+      - W/"dd2c2547d834185d85c0d041a392c190"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5605e9a6-b30a-4085-8d41-f8ec58529806
+      Ratelimit-Limit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4999'
+      X-Runtime:
+      - '0.018834'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e3c18ea6a3082f1-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sets":[{"code":"sm1","ptcgoCode":"SUM","name":"Sun & Moon","series":"Sun
+        & Moon","totalCards":149,"standardLegal":true,"expandedLegal":true,"releaseDate":"02/03/2017","symbolUrl":"https://images.pokemontcg.io/sm1/symbol.png","logoUrl":"https://images.pokemontcg.io/sm1/logo.png"}]}'
+    http_version: 
+  recorded_at: Sat, 27 Jan 2018 13:35:48 GMT
+recorded_with: VCR 4.0.0
