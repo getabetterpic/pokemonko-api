@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :pko_card do
-    card_id "sm3-93"
+    sequence(:card_id) { |n| "sm3-#{n}" }
     name "Gardevoir-GX"
     national_pokedex_number 282
     image_url "https://images.pokemontcg.io/sm3/93.png"
@@ -11,7 +11,7 @@ FactoryBot.define do
     number "93"
     artist "5ban Graphics"
     series "Sun & Moon"
-    set_code "sm3"
+    set { FactoryBot.create(:pko_set) }
     retreat_cost ["Colorless", "Colorless"]
     text ["When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."]
     types ["Fairy"]
@@ -44,5 +44,21 @@ FactoryBot.define do
       }
     ]
     evolves_from "Kirlia"
+
+    trait :standard_legal do
+      set { FactoryBot.create(:pko_set, :standard_legal) }
+    end
+
+    trait :expanded_legal do
+      set { FactoryBot.create(:pko_set, :expanded_legal) }
+    end
+
+    trait :not_standard_legal do
+      set { FactoryBot.create(:pko_set, :not_standard_legal) }
+    end
+
+    trait :not_expanded_legal do
+      set { FactoryBot.create(:pko_set, :not_expanded_legal) }
+    end
   end
 end

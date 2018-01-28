@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Jan 2018 13:58:43 GMT
+      - Sun, 28 Jan 2018 15:24:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d6ccc592d2597b895eb2db0d778d6ffa91517147923; expires=Mon, 28-Jan-19
-        13:58:43 GMT; path=/; domain=.pokemontcg.io; HttpOnly
+      - __cfduid=db278499ee6dc12a93f520c25f60c98d61517153057; expires=Mon, 28-Jan-19
+        15:24:17 GMT; path=/; domain=.pokemontcg.io; HttpOnly
       Link:
       - <https://api.pokemontcg.io/v1/cards?name=Gardevoir-GX&page=3&pageSize=1>;
         rel="last", <https://api.pokemontcg.io/v1/cards?name=Gardevoir-GX&page=2&pageSize=1>;
@@ -44,13 +44,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fa00f9dd-8f8a-425a-8f22-af3a39908aa7
+      - f161ae55-40c7-4381-9e79-85c6cc97fc98
       Ratelimit-Limit:
       - '5000'
       Ratelimit-Remaining:
       - '4999'
       X-Runtime:
-      - '0.009321'
+      - '0.018739'
       Vary:
       - Origin
       Via:
@@ -60,11 +60,68 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 3e4477dbfd61828b-ATL
+      - 3e44f5317daa384c-ATL
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJjYXJkcyI6W3siaWQiOiJzbTMtOTMiLCJuYW1lIjoiR2FyZGV2b2lyLUdYIiwibmF0aW9uYWxQb2tlZGV4TnVtYmVyIjoyODIsImltYWdlVXJsIjoiaHR0cHM6Ly9pbWFnZXMucG9rZW1vbnRjZy5pby9zbTMvOTMucG5nIiwiaW1hZ2VVcmxIaVJlcyI6Imh0dHBzOi8vaW1hZ2VzLnBva2Vtb250Y2cuaW8vc20zLzkzX2hpcmVzLnBuZyIsInR5cGVzIjpbIkZhaXJ5Il0sInN1cGVydHlwZSI6IlBva8OpbW9uIiwic3VidHlwZSI6IkdYIiwiZXZvbHZlc0Zyb20iOiJLaXJsaWEiLCJhYmlsaXR5Ijp7Im5hbWUiOiJTZWNyZXQgU3ByaW5nIiwidGV4dCI6Ik9uY2UgZHVyaW5nIHlvdXIgdHVybiAoYmVmb3JlIHlvdXIgYXR0YWNrKSwgeW91IG1heSBhdHRhY2ggYSBGYWlyeSBFbmVyZ3kgY2FyZCBmcm9tIHlvdXIgaGFuZCB0byAxIG9mIHlvdXIgUG9rw6ltb24uIiwidHlwZSI6IkFiaWxpdHkifSwiaHAiOiIyMzAiLCJyZXRyZWF0Q29zdCI6WyJDb2xvcmxlc3MiLCJDb2xvcmxlc3MiXSwibnVtYmVyIjoiOTMiLCJhcnRpc3QiOiI1YmFuIEdyYXBoaWNzIiwicmFyaXR5IjoiIiwic2VyaWVzIjoiU3VuICYgTW9vbiIsInNldCI6IkJ1cm5pbmcgU2hhZG93cyIsInNldENvZGUiOiJzbTMiLCJ0ZXh0IjpbIldoZW4geW91ciBQb2vDqW1vbi1HWCBpcyBLbm9ja2VkIE91dCwgeW91ciBvcHBvbmVudCB0YWtlcyAyIFByaXplIGNhcmRzLiJdLCJhdHRhY2tzIjpbeyJjb3N0IjpbIkZhaXJ5Il0sIm5hbWUiOiJJbmZpbml0ZSBGb3JjZSIsInRleHQiOiJUaGlzIGF0dGFjayBkb2VzIDMwIGRhbWFnZSB0aW1lcyB0aGUgYW1vdW50IG9mIEVuZXJneSBhdHRhY2hlZCB0byBib3RoIEFjdGl2ZSBQb2vDqW1vbi4iLCJkYW1hZ2UiOiIzMMOXIiwiY29udmVydGVkRW5lcmd5Q29zdCI6MX0seyJjb3N0IjpbIkZhaXJ5Il0sIm5hbWUiOiJUd2lsaWdodC1HWCIsInRleHQiOiJTaHVmZmxlIDEwIGNhcmRzIGZyb20geW91ciBkaXNjYXJkIHBpbGUgaW50byB5b3VyIGRlY2suIChZb3UgY2Fu4oCZdCB1c2UgbW9yZSB0aGFuIDEgR1ggYXR0YWNrIGluIGEgZ2FtZS4pIiwiZGFtYWdlIjoiIiwiY29udmVydGVkRW5lcmd5Q29zdCI6MX1dLCJyZXNpc3RhbmNlcyI6W3sidHlwZSI6IkRhcmtuZXNzIiwidmFsdWUiOiItMjAifV0sIndlYWtuZXNzZXMiOlt7InR5cGUiOiJNZXRhbCIsInZhbHVlIjoiw5cyIn1dfV19
     http_version: 
-  recorded_at: Sun, 28 Jan 2018 13:58:44 GMT
+  recorded_at: Sun, 28 Jan 2018 15:24:17 GMT
+- request:
+    method: get
+    uri: https://api.pokemontcg.io/v1/sets/sm3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Jan 2018 15:24:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d628c5c6058faee298ea36f7d42764d951517153057; expires=Mon, 28-Jan-19
+        15:24:17 GMT; path=/; domain=.pokemontcg.io; HttpOnly
+      Etag:
+      - W/"31551715fac00c2c6a3c8d5f30e3d34b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 45b5ac25-d4d5-468a-a352-44d8a95bc5aa
+      Ratelimit-Limit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4998'
+      X-Runtime:
+      - '0.006605'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e44f532fd4782f7-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"set":{"code":"sm3","ptcgoCode":"BUS","name":"Burning Shadows","series":"Sun
+        & Moon","totalCards":147,"standardLegal":true,"expandedLegal":true,"releaseDate":"08/05/2017","symbolUrl":"https://images.pokemontcg.io/sm3/symbol.png","logoUrl":"https://images.pokemontcg.io/sm3/logo.png"}}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:24:17 GMT
 recorded_with: VCR 4.0.0
