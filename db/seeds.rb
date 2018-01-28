@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Rake::Task['pokemon:load_sets'].execute
+Rake::Task['pokemon:load_cards'].execute
