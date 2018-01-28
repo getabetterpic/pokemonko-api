@@ -3,6 +3,8 @@ class PkoCard < ApplicationRecord
   validates :name, presence: true
 
   belongs_to :set, foreign_key: :set_code, primary_key: :code, class_name: 'PkoSet'
+  has_many :deck_cards
+  has_many :decks, through: :deck_cards
 
   SDK_ATTRS = %w(name national_pokedex_number image_url image_url_hi_res subtype supertype ability ancient_trait hp
                  number artist rarity series set_code retreat_cost text types attacks weaknesses resistances
