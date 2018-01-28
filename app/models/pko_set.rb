@@ -1,5 +1,7 @@
 class PkoSet < ApplicationRecord
-  validates :code, presence: true
+  validates :code, presence: true, uniqueness: true
+
+  has_many :cards, foreign_key: :set_code, primary_key: :code, class_name: 'PkoCard'
 
   SDK_ATTRS = %w(name series total_cards standard_legal expanded_legal release_date)
 

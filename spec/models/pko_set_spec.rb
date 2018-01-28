@@ -4,6 +4,7 @@ RSpec.describe PkoSet, type: :model do
   subject { FactoryBot.create(:pko_set) }
 
   it { is_expected.to validate_presence_of(:code) }
+  it { is_expected.to validate_uniqueness_of(:code) }
 
   describe '#create_from_api' do
     it 'creates a set object from api data' do

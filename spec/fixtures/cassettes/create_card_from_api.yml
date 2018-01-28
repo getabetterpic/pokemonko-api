@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pokemontcg.io/v1/cards?name=Gardevoir-GX&page=1&pageSize=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Jan 2018 13:58:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6ccc592d2597b895eb2db0d778d6ffa91517147923; expires=Mon, 28-Jan-19
+        13:58:43 GMT; path=/; domain=.pokemontcg.io; HttpOnly
+      Link:
+      - <https://api.pokemontcg.io/v1/cards?name=Gardevoir-GX&page=3&pageSize=1>;
+        rel="last", <https://api.pokemontcg.io/v1/cards?name=Gardevoir-GX&page=2&pageSize=1>;
+        rel="next"
+      Page-Size:
+      - '1'
+      Count:
+      - '1'
+      Total-Count:
+      - '3'
+      Etag:
+      - W/"4efd475838611cf483dace116701a9bc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fa00f9dd-8f8a-425a-8f22-af3a39908aa7
+      Ratelimit-Limit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4999'
+      X-Runtime:
+      - '0.009321'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e4477dbfd61828b-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjYXJkcyI6W3siaWQiOiJzbTMtOTMiLCJuYW1lIjoiR2FyZGV2b2lyLUdYIiwibmF0aW9uYWxQb2tlZGV4TnVtYmVyIjoyODIsImltYWdlVXJsIjoiaHR0cHM6Ly9pbWFnZXMucG9rZW1vbnRjZy5pby9zbTMvOTMucG5nIiwiaW1hZ2VVcmxIaVJlcyI6Imh0dHBzOi8vaW1hZ2VzLnBva2Vtb250Y2cuaW8vc20zLzkzX2hpcmVzLnBuZyIsInR5cGVzIjpbIkZhaXJ5Il0sInN1cGVydHlwZSI6IlBva8OpbW9uIiwic3VidHlwZSI6IkdYIiwiZXZvbHZlc0Zyb20iOiJLaXJsaWEiLCJhYmlsaXR5Ijp7Im5hbWUiOiJTZWNyZXQgU3ByaW5nIiwidGV4dCI6Ik9uY2UgZHVyaW5nIHlvdXIgdHVybiAoYmVmb3JlIHlvdXIgYXR0YWNrKSwgeW91IG1heSBhdHRhY2ggYSBGYWlyeSBFbmVyZ3kgY2FyZCBmcm9tIHlvdXIgaGFuZCB0byAxIG9mIHlvdXIgUG9rw6ltb24uIiwidHlwZSI6IkFiaWxpdHkifSwiaHAiOiIyMzAiLCJyZXRyZWF0Q29zdCI6WyJDb2xvcmxlc3MiLCJDb2xvcmxlc3MiXSwibnVtYmVyIjoiOTMiLCJhcnRpc3QiOiI1YmFuIEdyYXBoaWNzIiwicmFyaXR5IjoiIiwic2VyaWVzIjoiU3VuICYgTW9vbiIsInNldCI6IkJ1cm5pbmcgU2hhZG93cyIsInNldENvZGUiOiJzbTMiLCJ0ZXh0IjpbIldoZW4geW91ciBQb2vDqW1vbi1HWCBpcyBLbm9ja2VkIE91dCwgeW91ciBvcHBvbmVudCB0YWtlcyAyIFByaXplIGNhcmRzLiJdLCJhdHRhY2tzIjpbeyJjb3N0IjpbIkZhaXJ5Il0sIm5hbWUiOiJJbmZpbml0ZSBGb3JjZSIsInRleHQiOiJUaGlzIGF0dGFjayBkb2VzIDMwIGRhbWFnZSB0aW1lcyB0aGUgYW1vdW50IG9mIEVuZXJneSBhdHRhY2hlZCB0byBib3RoIEFjdGl2ZSBQb2vDqW1vbi4iLCJkYW1hZ2UiOiIzMMOXIiwiY29udmVydGVkRW5lcmd5Q29zdCI6MX0seyJjb3N0IjpbIkZhaXJ5Il0sIm5hbWUiOiJUd2lsaWdodC1HWCIsInRleHQiOiJTaHVmZmxlIDEwIGNhcmRzIGZyb20geW91ciBkaXNjYXJkIHBpbGUgaW50byB5b3VyIGRlY2suIChZb3UgY2Fu4oCZdCB1c2UgbW9yZSB0aGFuIDEgR1ggYXR0YWNrIGluIGEgZ2FtZS4pIiwiZGFtYWdlIjoiIiwiY29udmVydGVkRW5lcmd5Q29zdCI6MX1dLCJyZXNpc3RhbmNlcyI6W3sidHlwZSI6IkRhcmtuZXNzIiwidmFsdWUiOiItMjAifV0sIndlYWtuZXNzZXMiOlt7InR5cGUiOiJNZXRhbCIsInZhbHVlIjoiw5cyIn1dfV19
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 13:58:44 GMT
+recorded_with: VCR 4.0.0
