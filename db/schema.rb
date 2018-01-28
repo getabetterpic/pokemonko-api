@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180128140915) do
+ActiveRecord::Schema.define(version: 20180128141710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "citext"
 
   create_table "pko_cards", force: :cascade do |t|
     t.string "card_id", null: false
@@ -55,6 +56,14 @@ ActiveRecord::Schema.define(version: 20180128140915) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["code"], name: "index_pko_sets_on_code", unique: true
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.citext "email", null: false
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end
