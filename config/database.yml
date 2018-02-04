@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: pokemonko-api_production
-  username: pokemonko-api
-  password: <%= ENV['POKEMONKO-API_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
