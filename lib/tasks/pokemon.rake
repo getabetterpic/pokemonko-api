@@ -15,6 +15,7 @@ namespace :pokemon do
 
   desc 'Load all cards from the API'
   task load_cards: :environment do
+    cards = nil
     i = 1
     loop do
       cards = Pokemon::Card.where(page: i, pageSize: 100).all
@@ -22,9 +23,10 @@ namespace :pokemon do
       cards.each do |api_card|
         PkoCard.create_from_api(api_card)
       end
-      puts "Added #{cards.length} cards"
+      puts "Added #{(i * 100) + cards.length} cards"
       i += 1
     end
+    puts "Finished adding #{(i * 100) + cards.length} cards"
   end
 
 end

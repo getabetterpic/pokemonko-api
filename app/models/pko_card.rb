@@ -18,4 +18,12 @@ class PkoCard < ApplicationRecord
     card.save
     card
   end
+
+  def as_json
+    json = SDK_ATTRS.each_with_object({}) do |attr, hsh|
+      hsh[attr] = self.send(attr)
+    end
+    json[:set_name] = set.name
+    json
+  end
 end
