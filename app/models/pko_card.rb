@@ -6,6 +6,9 @@ class PkoCard < ApplicationRecord
   has_many :deck_cards
   has_many :decks, through: :deck_cards
 
+  has_one_attached :image
+  has_one_attached :hi_res_image
+
   SDK_ATTRS = %w(name national_pokedex_number image_url image_url_hi_res subtype supertype ability ancient_trait hp
                  number artist rarity series set_code retreat_cost text types attacks weaknesses resistances
                  evolves_from)
@@ -24,6 +27,7 @@ class PkoCard < ApplicationRecord
       hsh[attr] = self.send(attr)
     end
     json[:set_name] = set.name
+    json[:service_url] = image.service_url if image.attached?
     json
   end
 end
