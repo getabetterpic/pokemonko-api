@@ -29,4 +29,20 @@ namespace :pokemon do
     puts "Finished adding #{(i * 100) + cards.length} cards"
   end
 
+  desc 'Attach images to cards'
+  task attach_images: :environment do
+    require 'open-uri'
+
+    bar = ProgressBar.create(title: 'Attaching Images', total: PkoCard.count, format: '%t %c/%C | %w | %e')
+    PkoCard.find_each do |card|
+      if card.image.attached?
+        bar.increment
+        next
+      end
+      img = open(card.image_url)
+      card.image.attach(io: img, filename: "#{card.card_id}.png", content_type: 'image/png')
+      bar.increment
+    end
+    bar.finish
+  end
 end
