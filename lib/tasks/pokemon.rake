@@ -34,7 +34,7 @@ namespace :pokemon do
     require 'open-uri'
 
     bar = ProgressBar.create(title: 'Attaching Images', total: PkoCard.count, format: '%t %c/%C | %w | %e')
-    PkoCard.find_each do |card|
+    PkoCard.with_attached_image.find_each do |card|
       if card.image.attached?
         bar.increment
         next
