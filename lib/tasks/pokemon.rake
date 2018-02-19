@@ -39,9 +39,13 @@ namespace :pokemon do
         bar.increment
         next
       end
-      img = open(card.image_url)
-      card.image.attach(io: img, filename: "#{card.card_id}.png", content_type: 'image/png')
-      bar.increment
+      begin
+        img = open(card.image_url)
+        card.image.attach(io: img, filename: "#{card.card_id}.png", content_type: 'image/png')
+        bar.increment
+      rescue
+        bar.increment
+      end
     end
     bar.finish
   end
