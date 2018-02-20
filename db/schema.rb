@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_02_12_012928) do
+ActiveRecord::Schema.define(version: 2018_02_19_162739) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -103,6 +103,10 @@ ActiveRecord::Schema.define(version: 2018_02_12_012928) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "access_token"
+    t.string "id_token"
+    t.datetime "expires_at"
+    t.index ["email", "access_token"], name: "index_users_on_email_and_access_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
